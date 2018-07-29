@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ToDoViewController.swift
 //  Todoey
 //
 //  Created by Darran Edmundson on 2018-07-25.
@@ -12,7 +12,6 @@ import CoreData
 class TodoListViewController: UITableViewController {
 
     var itemArray = [Item]()
-    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     
