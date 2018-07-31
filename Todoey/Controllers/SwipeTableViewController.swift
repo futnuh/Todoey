@@ -13,7 +13,9 @@ class SwipeTableViewController: UITableViewController, SwipeTableViewCellDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+ 
         tableView.rowHeight = 80.0
+        tableView.separatorStyle = .none
     }
 
     
@@ -23,7 +25,7 @@ class SwipeTableViewController: UITableViewController, SwipeTableViewCellDelegat
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SwipeTableViewCell
         cell.delegate = self
-
+        
         return cell
     }
 
